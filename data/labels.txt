@@ -1,0 +1,11 @@
+positive
+positive
+negative
+negative
+negative
+positive
+positive
+positive
+positive
+negative
+negative
