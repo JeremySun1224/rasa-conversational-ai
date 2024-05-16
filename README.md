@@ -1,6 +1,6 @@
 # Getting Started
 
-![](asset/xbot.jpg)
+![](asset/demo.jpg)
 
 ## Usage 
 
