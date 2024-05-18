@@ -1,11 +1,19 @@
 # Getting Started
 
-![](asset/demo.jpg)
+![](asset/demo.png)
 
 ## Usage 
 
 1. Install require packages
 ```
+pip install requests==2.28.1
+pip install rasa==2.8.0
+pip install rasa-sdk==2.8.6
+pip install sanic-jwt==1.6.0 
+pip install "rasa[transformers]" -i https://pypi.rasa.com/simple
+pip install "rasa[spacy]" -i https://pypi.rasa.com/simple
+python -m spacy download en_core_web_sm 
+
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python -
 poetry install
 python -m pip install -U pip

@@ -2,7 +2,6 @@
 name = "rasa-conversational-ai"
 version = "0.1.0"
 description = ""
-authors = ["zhangchunyang <zhangchunyang_pri@126.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.8.2"

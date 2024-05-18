@@ -25,8 +25,8 @@ class SentimentAnalyzer(Component):
         with open("data/labels.txt", "r") as f:
             labels = f.read().splitlines()
         training_data = training_data.training_examples  # list of Message objects
-        # print(training_data)
-        # exit(0)
+        print(training_data)
+
         tokens = [list(map(lambda x: x.text, t.get("tokens"))) for t in training_data]
         processed_tokens = [self.preprocessing(t) for t in tokens]
         labeled_data = [(t, x) for t, x in zip(processed_tokens, labels)]
@@ -70,3 +70,7 @@ class SentimentAnalyzer(Component):
         classifier_file = file_name
         with open(classifier_file, "rb") as f:
             return pickle.load(f)
+
+
+if __name__ == '__main__':
+    SentimentAnalyzer
